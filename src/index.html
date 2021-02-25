@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container-xl">
+
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <div class="d-flex bd-highlight navbar-nav mr-auto sm-txt">
+                    <div class="me-auto p-2 bd-highlight flex-grow-1">プログラムのご紹介</div>
+                    <div class="dropdown flex-grow-1">
+                        <button class="btn dropdown-toggle line sm-txt" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                機能
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown flex-grow-1">
+                        <button class="btn dropdown-toggle line sm-txt" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ご使用方法
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2 bd-highlight flex-grow-1 line">過去データ</div>
+                    <div class="dropdown flex-grow-1">
+                        <button class="btn dropdown-toggle line sm-txt" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                アフィリエイト
+                        </button>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-2 bd-highlight flex-grow-1 line">お問い合わせ</div>
+                </div>
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btm-sm sm-txt">ダウンロード</button>
+                    <button type="button" class="btn btn-primary btm-sm sm-txt">購入する</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container-xl">
+        <div class="logo-section">
+            <div class="logo-section__logo-item">
+                <div class="logo">
+                    <img src="<%=require('./images/logo_icon.svg')%>" alt="">
+                    <img src="<%=require('./images/logo_text.svg')%>" alt="" srcset="">
+                </div>
+            </div>
+            <div class="logo-section__lenguage-item">
+                <img src="<%=require('./images/jp_flag.svg')%>" alt="" srcset="">
+                <div class="dropdown flex-grow-1">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        日本語
+                      </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="trial-section">
+            <div class="trial-section__text">
+                <p>Forex TesterはFXマーケットのトレードをシミュレーションできるソフトウェアです。 FXトレードストラテジーを作り、テストし、修正し、利益を上げる方を学べます。（マニュアルトレードも自動売買もテストできます。）
+                </p>
+                <div id="accordion" class="trial-section__text__accordion-section">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    <img src="<%=require('./images/arrow.svg')%>" alt="" srcset="">
+                                    <span>ストラテジーをテストし改善し、継続的に安定的な利益を！</span>
+                                </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    <img src="<%=require('./images/arrow.svg')%>" alt="" srcset="">                                    
+                                    <span>トレードストラテジーに確信を持つことで、ライブトレードをするときに、頭がクリアになりミスを防げます</span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                ストラテジーをテストし改善し、継続的に安定的な利益を！
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    <img src="<%=require('./images/arrow.svg')%>" alt="" srcset="">                                    
+                                    <span>トレードを学び、成功トレーダーになりましょう！</span>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                ストラテジーをテストし改善し、継続的に安定的な利益を！
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trial-section__text__download-item">
+                    <button type="button" class="btn btn-primary btn-lg btn-blue">
+                            <span class="btn-text">トライアル版のダウンロード</span>
+                            <img src="<%=require('./images/green_triangle.svg')%>" alt="" srcset="">
+                        </button>
+                    <div class="trial-section__text__download-item__text">
+                        <h1>成功への投資</h1>
+                        <p>FOREX TESTER SOFTWARE</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trial-section__img-item">
+                <img src="<%=require('./images/forex_tester_large.svg')%>" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="price-section">
+            <div class="price-section__item">
+                <img src="<%=require('./images/man3.png')%>" alt="" srcset="">
+            </div>
+            <div class="price-section__item">
+                <h4>#ステイアットホームセール</h4>
+                <p>在宅期間に、追加のディスカウントをゲットしよう。</p>
+                <ul>
+                    <li>バックテストソフトを¥<b>11000</b>>ディスカウント</li>
+                    <li>データ購読サービスで最大¥<b>6000</b>>の値引き</li>
+                    <li>セット購入で¥<b>13000</b>から¥<b>70900</b>セーブ</li>
+                </ul>
+                <button type="button" class="btn btn-warning btn-lg">FOREX TESTER4を購入</button>
+            </div>
+            <div class="price-section__item">
+                <p class="text red-text">見逃すな！</p>
+                <p class=" text blue-text">キャンペーン終了まで:</p>
+                <img src="<%=require('./images/counter.svg')%>" alt="" srcset="">
+                <button type="button" class="btn btn-primary btn-lg">新バージョンを知ろう</button>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="footer-section__img-item">
+                <img src="<%=require('./images/forex_tester_small.svg')%>" alt="" srcset="">
+            </div>
+            <div class="footer-section__text-item">
+                <h1>フォレックステスター４のイントロダクション</h1>
+                <h3>まったく新しいアプローチのバックテストを体験しよう：</h3>
+                <ul>
+                    <li>ファンダメンタルトレーダーのためのニュースと経済カレンダー</li>
+                    <li>800以上の新しいシンボルが追加されました（株式/インデックス/暗号通貨）</li>
+                    <li>ビジュアルストラテジー/インジケータービルダー</li>
+                    <li>リスク管理機能が含まれています</li>
+                    <li>ブローカーの手数料も追加して計算できます。</li>
+                    <li>メモとメモ帳</li>
+                    <li>さらなる機能…</li>
+                </ul>
+                <div class="footer-section__text-item__buttons">
+                    <button type="button" class="btn btn-primary btn-lg">を購入する Forex Tester 4</button>
+                    <button type="button" class="btn btn-primary btn-lg">今アップグレードして</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
